@@ -1,0 +1,127 @@
+/* -------------------  MOBILE  --------------------- */
+
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: Arial;
+	min-height: 100vh;
+}
+
+header {
+	/* header styles */
+	text-align: center;
+	color: red;
+}
+
+main {
+	flex: 1;
+	padding: 20px;
+}
+
+footer {
+	/* footer styles */
+	text-align: center;
+	color: red;
+}
+
+.rover-item-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.rover-button {
+	margin: 20px 0;
+	background-color: bisque;
+	font-weight: bold;
+}
+
+.rover-title {
+	color: gray;
+}
+
+.rover-button:hover {
+	cursor: pointer;
+	background-color: chocolate;
+}
+
+.rover-button:hover .rover-title {
+	color: white;
+}
+
+.photo-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.photo-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid orangered;
+}
+
+.info-container > li {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.info-container span {
+	font-size: 24px;
+	font-weight: bold;
+	color: orangered;
+}
+
+.photo {
+	width: 100%;
+	margin: 30px auto;
+	border: 3px solid orange;
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+	/* use mobile */
+
+	.rover-item-container {
+		flex-direction: column;
+	}
+
+	.rover-button {
+		width: 600px;
+		height: 600px;
+		font-size: 36px;
+	}
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+	/* use mobile */
+
+	.rover-item-container {
+		flex-direction: row;
+	}
+
+	.rover-button {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+	/* use mobile */
+
+	.rover-item-container {
+		flex-direction: row;
+	}
+
+	.rover-button {
+		width: 500px;
+		height: 500px;
+	}
+}
